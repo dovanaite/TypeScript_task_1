@@ -43,7 +43,7 @@ let taskas: Point = { //sulinkinama su "Point", tam, kad būtų lankomasi "Point
     y: 5,
 }
 
-let atstumas = (p: Point) => {
+let atstumas = (p: Point) => { //p - kintamojo atributas
 
     let koordinaciuAtstumas: number
     koordinaciuAtstumas = Math.sqrt(p.x * p.x + p.y * p.y);
