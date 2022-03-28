@@ -42,8 +42,8 @@ Pvyzdžiui jei funkcijai paduodami kintamieji: n = 5, m = 3, tai f-ja turi grą�
 1. Išbandykite funkciją. Funkcijos kintamiesiems ir grąžinamoms reikšmėms nurodykite tipus.*/
 var daliklis = function (n, m) {
     var bdd;
-    bdd = n;
-    for (var i = 1; i <= n; i++) {
+    bdd = Math.max(m, n);
+    for (var i = 1; i <= bdd; i++) {
         bdd--;
         if ((n % bdd == 0) && (m % bdd == 0)) {
             console.log('bdd:', bdd);
@@ -51,4 +51,4 @@ var daliklis = function (n, m) {
         }
     }
 };
-daliklis(5, 3);
+daliklis(20, 40);

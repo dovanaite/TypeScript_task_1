@@ -61,9 +61,10 @@ Pvyzdžiui jei funkcijai paduodami kintamieji: n = 5, m = 3, tai f-ja turi grą�
 let daliklis = (n: number, m: number): number => {
 
     let bdd: number;
-    bdd = n;
+    bdd = Math.max(m, n);
 
-    for (let i = 1; i <= n; i++) {
+
+    for (let i = 1; i <= bdd; i++) {
         bdd--;
 
         if ((n % bdd == 0) && (m % bdd == 0)) {
@@ -71,7 +72,6 @@ let daliklis = (n: number, m: number): number => {
             return bdd
         }
     }
-
 }
 
-daliklis(5, 3)
+daliklis(20, 40)
