@@ -75,3 +75,5 @@ let daliklis = (n: number, m: number): number => {
 }
 
 daliklis(20, 40)
+
+
